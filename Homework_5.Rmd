@@ -1,6 +1,6 @@
 ---
 title: "Homework_5"
-author: "Shekeira"
+author: "Shekeira Bryan Oki"
 date: "11/21/2021"
 output: pdf_document
 ---
