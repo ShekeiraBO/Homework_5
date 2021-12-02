@@ -36,7 +36,10 @@ chic_homicide <- homicide %>%
 ```{r}
 chic_homs <- st_as_sf(chic_homicide, coords = c("lon", "lat")) %>%
   st_set_crs(4269)
+```
 
+
+```{r}
 chic_map <- counties(state = "IL", cb = TRUE, class = "sf")
 chic_map <- chic_map %>%
   filter(COUNTYFP == "031")
@@ -53,4 +56,5 @@ ggplot() +
 ```{r}
 library(forcats)
 ```
+
 
