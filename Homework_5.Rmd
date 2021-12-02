@@ -2,7 +2,9 @@
 title: "Homework_5"
 author: "Shekeira Bryan Oki"
 date: "11/21/2021"
-output: pdf_document
+output:
+  word_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
