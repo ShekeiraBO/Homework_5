@@ -59,3 +59,12 @@ library(forcats)
 ```
 
 
+#Map of 3 race groups with highest homicides
+```{r}
+chic_homs %>%
+  mutate(victim_race = fct_lump(victim_race, n = 3)) %>%
+  ggplot +
+  geom_sf(data = chic_map) +
+  geom_sf(aes(color = victim_race))
+```
+
