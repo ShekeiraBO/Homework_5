@@ -49,4 +49,8 @@ ggplot() +
   geom_sf(data = chic_map) +
   geom_sf(data = chic_homs, aes(color = disposition))
 ```
+##Load forcats
+```{r}
+library(forcats)
+```
 
