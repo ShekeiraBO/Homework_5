@@ -9,4 +9,18 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 
+## Load libraries
+```{r}
+library(tidyverse)
+library(viridis)
+library(tigris)
+library(sf)
+library(ggplot2)
+```
+
+
+##Load data
+```{r}
+homicide <- read.csv("homicide-data.csv")
+```
+
