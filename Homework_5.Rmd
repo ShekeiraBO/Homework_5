@@ -42,3 +42,11 @@ chic_map <- chic_map %>%
   filter(COUNTYFP == "031")
 ```
 
+
+##Create plot
+```{r}
+ggplot() +
+  geom_sf(data = chic_map) +
+  geom_sf(data = chic_homs, aes(color = disposition))
+```
+
