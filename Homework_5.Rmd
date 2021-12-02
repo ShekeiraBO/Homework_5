@@ -24,3 +24,10 @@ library(ggplot2)
 homicide <- read.csv("homicide-data.csv")
 ```
 
+
+##Chicago homicides
+```{r}
+chic_homicide <- homicide %>%
+  filter(city == "Chicago")
+```
+
