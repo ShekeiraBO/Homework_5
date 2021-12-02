@@ -32,13 +32,14 @@ chic_homicide <- homicide %>%
 ```
 
 
-##Create a map showing homicides using sf function
+##Identify longitude and latitude of Chicago homicides
 ```{r}
 chic_homs <- st_as_sf(chic_homicide, coords = c("lon", "lat")) %>%
   st_set_crs(4269)
 ```
 
 
+##Create map of Chicago using SF function
 ```{r}
 chic_map <- counties(state = "IL", cb = TRUE, class = "sf")
 chic_map <- chic_map %>%
