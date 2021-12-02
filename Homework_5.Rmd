@@ -4,7 +4,6 @@ author: "Shekeira Bryan Oki"
 date: "11/21/2021"
 output:
   word_document: default
-  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -49,7 +48,7 @@ chic_map <- chic_map %>%
 ```
 
 
-##Create plot
+##Create plot of homicides in Chicago
 ```{r}
 ggplot() +
   geom_sf(data = chic_map) +
@@ -59,6 +58,7 @@ ggplot() +
 ```{r}
 library(forcats)
 ```
+
 
 
 #Map of 3 race groups with highest homicides
