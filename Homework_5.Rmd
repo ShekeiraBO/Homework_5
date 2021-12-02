@@ -31,3 +31,14 @@ chic_homicide <- homicide %>%
   filter(city == "Chicago")
 ```
 
+
+##Create a map showing homicides using sf function
+```{r}
+chic_homs <- st_as_sf(chic_homicide, coords = c("lon", "lat")) %>%
+  st_set_crs(4269)
+
+chic_map <- counties(state = "IL", cb = TRUE, class = "sf")
+chic_map <- chic_map %>%
+  filter(COUNTYFP == "031")
+```
+
